@@ -1,0 +1,30 @@
+body{
+    font-family: 'Source Serif 4', serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Marcellus', serif;
+    font-weight: bold;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+nav{
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nom-restaurant{
+    font-size: 3.5rem;
+}
+
+.flex-accueil{
+    display: flex;
+    width: 20%;
+}
