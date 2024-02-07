@@ -1,5 +1,22 @@
+/* Mise en page de base */
 body{
     font-family: 'Source Serif 4', serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+nav li {
+    display: inline-block;
+    margin: 20px 20px;
+}
+  
+nav {
+    text-align: right;
 }
 
 h1, h2, h3 {
@@ -10,11 +27,9 @@ h1, h2, h3 {
 .container{
     max-width: 1200px;
     margin: 0 auto;
-  }
-
-nav{
-    text-decoration: none;
 }
+
+/* Mise en page accueil*/
 
 a {
     text-decoration: none;
@@ -26,5 +41,13 @@ a {
 
 .flex-accueil{
     display: flex;
+    align-items: center;
+}
+
+.description-accueil{
     width: 20%;
+}
+
+.container-image{
+    width:70%;
 }
