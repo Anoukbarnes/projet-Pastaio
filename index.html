@@ -25,12 +25,13 @@
                 <li><a  href="./index.html">Accueil</a></li>
                 <li><a  href="./reservations.html">Réservations</a></li>
                 <li><a  href="./restaurant.html">Restaurant</a></li>
-                <li><a  href="./macommande.html">Ma commande</a></li>
+                <li><a class="btn-commande" href="./macommande.html">Ma commande</a></li>
             </ul>
         </nav>
     </header>
     <main>
         
+        <div class="background-hero">
         <section class="container flex-accueil">
             <div class="description-accueil"> 
                 <h1 class="nom-restaurant">Pastaio</h1>
@@ -42,52 +43,136 @@
                 <img src="img/accueil.jpg" alt="Assiette de tortelinis">
             </div>
         </section>
-       
-            
-        <section class="container">
-            <h3>Témoignages</h3>
-            <p>Clients satisfaits</p>
-                <div>
-                    <img src="img/client-1.jpg" alt="Client 1">
-                    <p class="nom-client">Oliver Thompson</p>
-                    <p>«Une expérience culinaire exquise. Les plats de La Pasteria sont délicieusement préparés avec des saveurs authentiques. Le service attentionné et l'ambiance charmante en font une expérience unique.»</p>
-                </div>
+        </div>
 
-                <div>
-                    <img src="img/client-2.jpg" alt="Client 1">
-                    <p class="nom-client">Léa Dubois</p>
-                    <p>«Les pâtes fraîches sont divinement préparées, accompagnées de sauces savoureuses. Le personnel attentionné et l'ambiance élégante ajoutent une touche parfaite à cette expérience gastronomique.»</p>
-                </div>
 
-                <div>
-                    <img src="img/client-3.jpg" alt="Client 1">
-                    <p class="nom-client">Sophie Martin</p>
-                    <p>«Une explosion de saveurs chez Pastaio. Les plats sont préparés avec soin et les ingrédients de qualité se marient parfaitement.  L'atmosphère intime et accueillante en fait un endroit idéal pour un dîner inoubliable..»</p>
-                </div>
+<!--Section Menu-->
 
-                <div>
-                    <img src="img/client-4.jpg" alt="Client 1">
-                    <p class="nom-client">Benjamin Mitchell</p>
-                    <p>«Pastaio est un paradis pour les amateurs de cuisine italienne. Les pâtes et les desserts sont simplement décadents. Un équilibre parfait de saveurs et de textures dans un cadre charmant.»</p>
+        <section class="container-menu">
+            <h3>Antipasti</h3>
+            <div class="flex-menu">
+                <div class="carte-menu box-gauche">
+                    <div class="flex-prix">
+                        <h4>Burrata tomates confites</h4>
+                        <span>16</span>
+                    </div>
+                    <p>Une burrata crémeuse maison avec tomates confites et basilic frais.</p>
                 </div>
+                <div class="carte-menu box-droite">
+                    <div class="flex-prix">
+                        <h4>Carpaccio de betterave ricotta et noix</h4>
+                        <span>14</span>
+                    </div>
+                    <p>De fines tranches de betterave crue marinées dans une vinaigrette légère, accompagnées de ricotta salée émiettée et de noix concassées.</p>
+                </div>
+            </div>
 
-                <div>
-                    <img src="img/client-5.jpg" alt="Client 1">
-                    <p class="nom-client">Lucas Bennett</p>
-                    <p>«Une expérience culinaire exquise. Les plats chez Pastaio sont délicieusement préparés avec des saveurs authentiques. Le service attentionné et l'ambiance charmante en font une expérience unique.»</p>
+            <h3>Pasta</h3>
+            <div class="flex-menu">
+                <div class="carte-menu box-gauche">
+                    <div class="flex-prix">
+                        <h4>Pâtes al Tartufo</h4>
+                        <span>25</span>
+                    </div>
+                    <p>Pâtes fraîches nappées d'une sauce crémeuse à la truffe noire, touche de vin blanc et parmesan.</p>
                 </div>
+                <div class="carte-menu box-droite">
+                    <div class="flex-prix">
+                        <h4>Pâtes al Funghi</h4>
+                        <span>22</span>
+                    </div>
+                    <p>Pâtes fraîches avec sauce crémeuse aux champignons frais, ail, persil et parmesan.</p>
+                </div>
+                <div class="carte-menu box-gauche">
+                    <div class="flex-prix">
+                        <h4>Pâtes al Gorgonzola</h4>
+                        <span>24</span>
+                    </div>
+                    <p>Pâtes fraîches avec sauce crémeuse au gorgonzola, vin blanc et noix.</p>
+                </div>
+                <div class="carte-menu box-droite">
+                    <div class="flex-prix">
+                        <h4>Pâtes ai Frutti di Mare</h4>
+                        <span>28</span>
+                    </div>
+                    <p>Pâtes fraîches avec fruits de mer sautés (crevettes, palourdes, calamars), dans une sauce tomate légère et parfumée.</p>
+                </div>
+            </div>
 
-                <div>
-                    <img src="img/client-6.jpg" alt="Client 1">
-                    <p class="nom-client">Mathis Dupuis</p>
-                    <p>«Pastaio est un véritable délice pour les papilles. Leurs plats authentiques sont préparés avec passion et créativité. L'équipe attentionnée et l'atmosphère chaleureuse vous font sentir comme chez vous. Une expérience culinaire à ne pas manquer.»</p>
+            <h3>Dolce</h3>
+
+            <div class="flex-menu">
+                <div class="carte-menu box-gauche">
+                    <div class="flex-prix">
+                        <h4>Tiramisu</h4>
+                        <span>8</span>
+                    </div>
+                    <p>Biscuit imbibé de café, recouvert d'une crème mascarpone onctueuse et saupoudré de cacao amer.</p>
                 </div>
+                <div class="carte-menu box-droite">
+                    <div class="flex-prix">
+                        <h4>Panna Cotta</h4>
+                        <span>7</span>
+                    </div>
+                    <p>Crème dessert italienne crémeuse et onctueuse, nappée d'un coulis de fruits rouges frais.</p>
+                </div>
+            </div>
             
         </section>
+
+       
+
+<!--Section cartes de clients satisfaits-->
+
+        <div class="background-clients">
+        <section class="container section-clients">
+            <h5>Témoignages</h5>
+            <h6>Clients satisfaits<h6>
+            <div class="flex-clients">
+                <div class="carte-client">
+                    <img src="img/client-1.jpg" alt="Client 1">
+                    <p class="nom-client">Oliver Thompson</p>
+                    <p>« Une expérience culinaire exquise. Les plats de La Pasteria sont délicieusement préparés avec des saveurs authentiques. Le service attentionné et l'ambiance charmante en font une expérience unique. »</p>
+                </div>
+
+                <div class="carte-client">
+                    <img src="img/client-2.jpg" alt="Client 1">
+                    <p class="nom-client">Léa Dubois</p>
+                    <p>« Les pâtes fraîches sont divinement préparées, accompagnées de sauces savoureuses. Le personnel attentionné et l'ambiance élégante ajoutent une touche parfaite à cette expérience gastronomique. »</p>
+                </div>
+
+                <div class="carte-client">
+                    <img src="img/client-3.jpg" alt="Client 1">
+                    <p class="nom-client">Sophie Martin</p>
+                    <p>« Une explosion de saveurs chez Pastaio. Les plats sont préparés avec soin et les ingrédients de qualité se marient parfaitement.  L'atmosphère intime et accueillante en fait un endroit idéal pour un dîner inoubliable. »</p>
+                </div>
+
+                <div class="carte-client">
+                    <img src="img/client-4.jpg" alt="Client 1">
+                    <p class="nom-client">Benjamin Mitchell</p>
+                    <p>« Pastaio est un paradis pour les amateurs de cuisine italienne. Les pâtes et les desserts sont simplement décadents. Un équilibre parfait de saveurs et de textures dans un cadre charmant. »</p>
+                </div>
+
+                <div class="carte-client">
+                    <img src="img/client-5.jpg" alt="Client 1">
+                    <p class="nom-client">Lucas Bennett</p>
+                    <p>« Une expérience culinaire exquise. Les plats chez Pastaio sont délicieusement préparés avec des saveurs authentiques. Le service attentionné et l'ambiance charmante en font une expérience unique. »</p>
+                </div>
+
+                <div class="carte-client">
+                    <img src="img/client-6.jpg" alt="Client 1">
+                    <p class="nom-client">Mathis Dupuis</p>
+                    <p>« Pastaio est un véritable délice pour les papilles. Leurs plats authentiques sont préparés avec passion et créativité. L'équipe attentionnée et l'atmosphère chaleureuse vous font sentir comme chez vous. »</p>
+                </div>
+            </div>
+            
+        </section>
+        </div>
     </main>
     
+    <div class="background-footer">
     <footer class="container">
-        <section class="flex-credits">
+        <section class="flex-footer-credits">
             <div>
                 <img src="img/enveloppe.png" href="mailto:anouk721@gmail.com">
                 <p>Réalisé par: Anouk Barnes</p>
@@ -101,7 +186,7 @@
             </div>
         </section>
         <hr>
-        <section class="flex-cours">
+        <section class="flex-footer-cours">
             <div>
                 <p>Intégration web 1</p>
             </div>
@@ -111,6 +196,8 @@
             </div>
         </section>
     </footer>
+    </div>
+
 </body>
 </html>
 
