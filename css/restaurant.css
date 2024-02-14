@@ -1,0 +1,28 @@
+/* Section informations adresse carte */
+
+.flex-address {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    
+}
+
+.address {
+    display: inline-block;
+}
+
+.map {
+    display: inline-block;
+}
+
+.flex-address h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-top: 10%;
+}
+
+.tel {
+    text-decoration: none;
+}
