@@ -3,51 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Pastaio</title>
     
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/macommande.css">
     <link rel="icon" href="favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz@8..60&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
     <header>
-        <h1><a class="btn-logo" href="./index.html">La Pasteria</a></h1>
+        <h2><a href="./index.html"><img src="img/logo.png" alt="logo"></h2>
         <nav>
             <ul>
-                <li><a class="nav" href="./reservations.html">Réservations</a></li>
-                <li><a class="nav" href="./restaurant.html">Restaurant</a></li>
-                <li><a class="nav" href="./macommande.html">Ma commande</a></li>
+                <li><a  href="./index.html">Accueil</a></li>
+                <li><a  href="./reservations.html">Réservations</a></li>
+                <li><a  href="./restaurant.html">Restaurant</a></li>
+                <li><a  class="btn-commande actuel" href="./macommande.html">Ma commande</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
+        <section class="container">
+            
+            <h1 class="title-page">Ma commande</h1>
+            <h2>Entrées</h2>
+            <div class="flex-commande">
+                <div class="tables">
+                    <table>
+                        <tr>
+                            <th class="align-left colored-row rounded">Nom du plat</th>
+                            <th class="colored-row">Prix</th>
+                            <th class="colored-row">Quantité</th>
+                        </tr>
+                        <tr>
+                            <td class="align-left">Burrata tomates confites</td>
+                            <td>5,99 $</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td class="align-left colored-row rounded">Carpaccio bettrave</td>
+                            <td class="colored-row">15,99 $</td>
+                            <td class="colored-row">1</td>
+                        </tr>
+                        <tr>
+                            <td class="align-left">Entrée 3</td>
+                            <td>8,99 $</td>
+                            <td>2</td>
+                        </tr>
+                    </table>
+                    
+                    <h2>Plats Principaux</h2>
+                    <table>
+                        <tr>
+                            <th class="align-left colored-row rounded">Nom du plat</th>
+                            <th class="colored-row">Prix</th>
+                            <th class="colored-row">Quantité</th>
+                        </tr>
+                        <tr>
+                            <td class="align-left">Pâtes al Tartufo</td>
+                            <td>25,99 $</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td class="align-left colored-row rounded">Pâtes al Funghi</td>
+                            <td class="colored-row">22 $</td>
+                            <td class="colored-row">1</td>
+                        </tr>
+                        <tr>
+                            <td class="align-left">Pâtes al Gorgonzola</td>
+                            <td>24 $</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td class="align-left colored-row rounded">Pâtes ai Frutti di Mare</td>
+                            <td class="colored-row">28 $</td>
+                            <td class="colored-row">2</td>
+                        </tr>
+                    </table>
+                
+                    <h2>Autre</h2>
+                    <table>
+                        <tr>
+                            <th class="align-left colored-row rounded">Nom du plat</th>
+                            <th class="colored-row">Prix</th>
+                            <th class="colored-row">Quantité</th>
+                        </tr>
+                        <tr>
+                            <td class="align-left">Panna Cotta</td>
+                            <td>7 $</td>
+                            <td>1</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="card">
+                    <h3>Détails</h3>
+                    <div class="flex-prix">
+                        <p>Sous-total:</p>
+                        <span>12,50$</span>
+                    </div>
+                    <div class="flex-prix">
+                        <p>Taxes:</p>
+                        <span>4,49$</span>
+                    </div>
+                    <hr>
+                    <div class="flex-prix">
+                        <p>Total:</p>
+                        <span>34,45</span>
+                    </div>
+                    <div class="flex-prix">
+                        <a class="btn-commande" href="#">Commander</a>
+                    </div>  
+                </div>
+            </div>
+        </section>
 
     </main>
 
-    <footer class="container">
-        <section class="flex-credits">
-            <div>
-                <img src="img/enveloppe.png" href="mailto:anouk721@gmail.com">
-                <p>Réalisé par: Anouk Barnes</p>
-            </div>
-            <div class="logo-socials">
-                <p>Réseaux sociaux:</p>
-                <img src="img/facebook.png" href="">
-                <img src="img/instagram.png" href="">
-                <img src="img/linkedin.png" href="">
-                <img src="img/twitter.png" href="">
-            </div>
-        </section>
-        <hr>
-        <section class="flex-cours">
-            <div>
-                <p>Intégration web 1</p>
-            </div>
-            <div>
-                <p>Cégep de Trois-Rivières</p> 
-                <p>Hiver 2023</p>
-            </div>
-        </section>
-    </footer>
-</body>
-</html>
+    <div class="background-footer">
+        <footer class="container">
+            <section class="flex-footer-credits">
+                <div>
+                    <img src="img/enveloppe.png" href="mailto:anouk721@gmail.com">
+                    <p>Réalisé par: Anouk Barnes</p>
+                </div>
+                <div class="logo-socials">
+                    <p>Réseaux sociaux:</p>
+                    <img src="img/facebook.png" href="">
+                    <img src="img/instagram.png" href="">
+                    <img src="img/linkedin.png" href="">
+                    <img src="img/twitter.png" href="">
+                </div>
+            </section>
+            <hr>
+            <section class="flex-footer-cours">
+                <div>
+                    <p>Intégration web 1</p>
+                </div>
+                <div>
+                    <p>Cégep de Trois-Rivières</p> 
+                    <p>Hiver 2023</p>
+                </div>
+            </section>
+        </footer>
+        </div>
+    
+    </body>
+    </html>

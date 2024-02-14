@@ -1,0 +1,66 @@
+.flex-commande {
+    display: flex;
+}
+
+.tables {
+    width:60%;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width:24%;
+    height: 60%;
+    margin: 0 auto;
+    background-color: #5d82558c;
+    padding: 1.5rem 2rem 1.5rem 2rem;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-top: 3%;
+}
+
+.card p, span {
+    font-size: 1.2rem;
+}
+
+td, th{
+    padding: 1rem;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+    color: rgb(40, 39, 39);
+    border-collapse: collapse;
+    margin-bottom: 4rem;
+}
+
+.align-left{
+    text-align: left;
+} 
+
+.colored-row {
+    background-color: #5d82558c;
+}
+
+.title-page {
+    padding: 1rem 0 2rem 0;
+    font-size: 3rem;
+}
+
+.rounded{
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+/* Card order summary */
+
+
+.flex-prix p {
+    font-weight: bold;
+}
+
+.flex-prix a{
+    margin-top: 5%;
+}
