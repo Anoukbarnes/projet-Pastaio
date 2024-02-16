@@ -3,50 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Pastaio</title>
     
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reservations.css">
     <link rel="icon" href="favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz@8..60&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <h1><a class="btn-logo" href="./index.html">La Pasteria</a></h1>
+        <h2><a href="./index.html"><img src="img/logo.png" alt="logo"></h2>
         <nav>
             <ul>
-                <li><a class="nav" href="./reservations.html">Réservations</a></li>
-                <li><a class="nav" href="./restaurant.html">Restaurant</a></li>
-                <li><a class="nav" href="./macommande.html">Ma commande</a></li>
+                <li><a  href="./index.html">Accueil</a></li>
+                <li><a  class="actuel" href="./reservations.html">Réservations</a></li>
+                <li><a  href="./restaurant.html">Restaurant</a></li>
+                <li><a class="btn-commande" href="./macommande.html">Ma commande</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
+        <section class="container">
+            <h1 class="title-page">Réservations</h1>
+
+            <form  method="get" action= "confirmation.html" class="flex-form">
+                <fieldset class="marg-form form-left">
+                    <div>
+                        <legend class="marg-box">Informations sur la réservation</legend>
+                    </div>
+
+                    <div class="marg-box">
+                        <label for="date-reservation">Date de la réservation</label><span>*</span>
+                        <div>
+                            <input type="date" id="date-reservation" name="date-reservation" required>
+                        </div>
+                    </div>
+
+                    <div class="marg-box">
+                        <label for="nb-personnes">Nombre de personnes</label><span>*</span>
+                        <div>
+                            <input type="number" id="nb-personnes" name="nbr-personnes" required>
+                        </div>
+                    </div>
+
+                    <div class="marg-box">
+                        <label for="time-reservation">Heure de la réservation</label><span>*</span>
+                        <div>
+                            <input type="time" id="time-reservation" name="time-reservation" required>
+                        </div>
+                    </div>
+
+                    <div class="marg-box">
+                        <label>Réservation pour</label><span>*</span>
+
+                        <div>
+                            <input type="radio" name="rdo-reservation" id="salle" value="salle" required>
+                            <label for="salle">Salle à manger</label>
+                        </div>
+                    
+                        <div>
+                            <input type="radio" name="rdo-reservation" id="terrasse" value="terrasse" required>
+                            <label for="sat-non">Terrasse</label>
+                        </div>
+            
+                    </div>
+
+                    <div class="marg-box">
+                        <label for="txt-comment">Commentaires supplémentaire (spécifications, restrictions, allergies) </label>
+                       <div>
+                            <textarea id="txt-comment" name="txt-comment"></textarea> </textarea>
+                        </div> 
+                    </div>		
+                </fieldset>
+
+                <fieldset class="marg-form form-right">
+                    <div>
+                        <legend class="marg-box">Informations personnelles</legend>
+                    </div>
+
+                    <div class="marg-box">
+                        <label for="first-name">Votre prénom</label><span>*</span>
+                        <div>
+                            <input type="text" id="first-name" name="first-name" required>
+                        </div>
+                    </div>
+
+                    <div class="marg-box">
+                        <label>Votre nom</label><span>*</span>
+                        <div>
+                            <input type="text" id="last-name" name="last-name" required>
+                        </div>
+                    </div>
+
+                    <div class="marg-box">
+                        <label for="tel-client">Votre numéro de téléphone</label><span>*</span>
+                        <div>
+                            <input type="tel" id="tel-client" name="tel-client" required>
+                        </div>
+                    </div>
+
+                    <div class="marg-box">
+                        <label for="mail-client">Votre courriel</label>
+                       <div> 
+                            <input type="email" id="mail-client" name="mail-client">
+                        </div>
+                    </div>
+
+                    <div class="marg-box">
+                        <label>Je souhaite m'inscrire à l'infolettre de Pastaio</label>
+                        <input type="checkbox" id="ckb-lettre" name="ckb-lettre">
+                    </div>
+                </fieldset>
+
+                    <div>
+                        <input type="submit" id= "btn-formulaire" value="Confirmer la réservation">
+                    </div>
+
+            </form>
+        </section>
 
     </main>
-    <footer class="container">
-        <section class="flex-credits">
-            <div>
-                <img src="img/enveloppe.png" href="mailto:anouk721@gmail.com">
-                <p>Réalisé par: Anouk Barnes</p>
-            </div>
-            <div class="logo-socials">
-                <p>Réseaux sociaux:</p>
-                <img src="img/facebook.png" href="">
-                <img src="img/instagram.png" href="">
-                <img src="img/linkedin.png" href="">
-                <img src="img/twitter.png" href="">
-            </div>
-        </section>
-        <hr>
-        <section class="flex-cours">
-            <div>
-                <p>Intégration web 1</p>
-            </div>
-            <div>
-                <p>Cégep de Trois-Rivières</p> 
-                <p>Hiver 2023</p>
-            </div>
-        </section>
-    </footer>
-</body>
-</html>
+
+    <div class="background-footer">
+        <footer class="container">
+            <section class="flex-footer-credits">
+                <div>
+                    <img src="img/enveloppe.png" href="mailto:anouk721@gmail.com">
+                    <p>Réalisé par: Anouk Barnes</p>
+                </div>
+                <div class="logo-socials">
+                    <p>Réseaux sociaux:</p>
+                    <img src="img/facebook.png" href="">
+                    <img src="img/instagram.png" href="">
+                    <img src="img/linkedin.png" href="">
+                    <img src="img/twitter.png" href="">
+                </div>
+            </section>
+            <hr>
+            <section class="flex-footer-cours">
+                <div>
+                    <p>Intégration web 1</p>
+                </div>
+                <div>
+                    <p>Cégep de Trois-Rivières</p> 
+                    <p>Hiver 2023</p>
+                </div>
+            </section>
+        </footer>
+        </div>
+    
+    </body>
+    </html>
