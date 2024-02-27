@@ -19,13 +19,13 @@
 
 <body>
     <header>
-        <h1><img src="img/logo.png" alt="logo" href="./index.html"></h1>
+        <h1><a href="./index.html"><img src="img/logo.png" alt="logo"></h1>
         <nav>
             <ul>
-                <li><a  href="./index.html">Accueil</a></li>
+                <li><a  class="actuel" href="./index.html">Accueil</a></li>
                 <li><a  href="./reservations.html">Réservations</a></li>
                 <li><a  href="./restaurant.html">Restaurant</a></li>
-                <li><a class="btn-commande" href="./macommande.html">Ma commande</a></li>
+                <li><a  class="btn-commande-nav" href="./macommande.html">Ma commande</a></li>
             </ul>
         </nav>
     </header>
@@ -36,8 +36,10 @@
             <div class="description-accueil"> 
                 <h1 class="nom-restaurant">Pastaio</h1>
                 <p>Savourez nos délicieuses pâtes fraîches faites maison, accompagnées d'ingrédients locaux choisis avec soin. Une expérience culinaire authentique  dans une ambiance chaleureuse. Venez nous rendre visite aujourd'hui!</p>
+            <div class="btn-accueil">
                 <a href="./macommande.html">+ Commander en ligne</a>
                 <a href="./reservations.html">+ Réserver</a>
+            </div>
             </div>
             <div class= "container-image">
                 <img src="img/accueil.jpg" alt="Assiette de tortelinis">
@@ -49,69 +51,70 @@
 <!--Section Menu-->
 
         <section class="container-menu">
-            <h3>Antipasti</h3>
+            <h3>Menu</h3>
+            <h4>Antipasti</h4>
             <div class="flex-menu">
                 <div class="carte-menu box-gauche">
                     <div class="flex-prix">
-                        <h4>Burrata tomates confites</h4>
+                        <h5>Burrata tomates confites</h5>
                         <span>16</span>
                     </div>
                     <p>Une burrata crémeuse maison avec tomates confites et basilic frais.</p>
                 </div>
                 <div class="carte-menu box-droite">
                     <div class="flex-prix">
-                        <h4>Carpaccio de betterave ricotta et noix</h4>
+                        <h5>Carpaccio de betterave ricotta et noix</h5>
                         <span>14</span>
                     </div>
-                    <p>De fines tranches de betterave crue marinées dans une vinaigrette légère, accompagnées de ricotta salée émiettée et de noix concassées.</p>
+                    <p>Betterave crue marinées avec vinaigrette légère, ricotta salée émiettée et noix concassées.</p>
+                </div>
+                <div class="carte-menu box-gauche">
+                    <div class="flex-prix">
+                        <h5>Carpaccio de boeuf</h5>
+                        <span>9</span>
+                    </div>
+                    <p>Fines tranches de bœuf cru, marinade aux herbes et au parmesan.</p>
                 </div>
             </div>
 
-            <h3>Pasta</h3>
+            <h4>Pasta</h4>
             <div class="flex-menu">
                 <div class="carte-menu box-gauche">
                     <div class="flex-prix">
-                        <h4>Pâtes al Tartufo</h4>
+                        <h5>Pâtes al Tartufo</h5>
                         <span>25</span>
                     </div>
                     <p>Pâtes fraîches nappées d'une sauce crémeuse à la truffe noire, touche de vin blanc et parmesan.</p>
                 </div>
                 <div class="carte-menu box-droite">
                     <div class="flex-prix">
-                        <h4>Pâtes al Funghi</h4>
+                        <h5>Pâtes al Funghi</h5>
                         <span>22</span>
                     </div>
                     <p>Pâtes fraîches avec sauce crémeuse aux champignons frais, ail, persil et parmesan.</p>
                 </div>
                 <div class="carte-menu box-gauche">
                     <div class="flex-prix">
-                        <h4>Pâtes al Gorgonzola</h4>
+                        <h5>Pâtes al Gorgonzola</h5>
                         <span>24</span>
                     </div>
                     <p>Pâtes fraîches avec sauce crémeuse au gorgonzola, vin blanc et noix.</p>
                 </div>
                 <div class="carte-menu box-droite">
                     <div class="flex-prix">
-                        <h4>Pâtes ai Frutti di Mare</h4>
+                        <h5>Pâtes ai Frutti di Mare</h5>
                         <span>28</span>
                     </div>
                     <p>Pâtes fraîches avec fruits de mer sautés (crevettes, palourdes, calamars), dans une sauce tomate légère et parfumée.</p>
                 </div>
             </div>
 
-            <h3>Dolce</h3>
+            <h4>Dolce</h4>
 
             <div class="flex-menu">
                 <div class="carte-menu box-gauche">
                     <div class="flex-prix">
-                        <h4>Tiramisu</h4>
-                        <span>8</span>
-                    </div>
-                    <p>Biscuit imbibé de café, recouvert d'une crème mascarpone onctueuse et saupoudré de cacao amer.</p>
-                </div>
-                <div class="carte-menu box-droite">
-                    <div class="flex-prix">
-                        <h4>Panna Cotta</h4>
+                        <h5>Panna Cotta</h5>
                         <span>7</span>
                     </div>
                     <p>Crème dessert italienne crémeuse et onctueuse, nappée d'un coulis de fruits rouges frais.</p>
@@ -126,8 +129,8 @@
 
         <div class="background-clients">
         <section class="container section-clients">
-            <h5>Témoignages</h5>
-            <h6>Clients satisfaits<h6>
+            <h6>Témoignages</h6>
+            <p class="nom-section">Clients satisfaits<p>
             <div class="flex-clients">
                 <div class="carte-client">
                     <img src="img/client-1.jpg" alt="Client 1">
@@ -149,7 +152,7 @@
 
                 <div class="carte-client">
                     <img src="img/client-4.jpg" alt="Client 1">
-                    <p class="nom-client">Benjamin Mitchell</p>
+                    <p class="nom-client">Gabriel Mitchell</p>
                     <p>« Pastaio est un paradis pour les amateurs de cuisine italienne. Les pâtes et les desserts sont simplement décadents. Un équilibre parfait de saveurs et de textures dans un cadre charmant. »</p>
                 </div>
 
@@ -169,20 +172,21 @@
         </section>
         </div>
     </main>
-    
-    <div class="background-footer">
+
+<!--Footer-->
+
     <footer class="container">
         <section class="flex-footer-credits">
-            <div>
+            <div class="name-footer">
                 <img src="img/enveloppe.png" href="mailto:anouk721@gmail.com">
                 <p>Réalisé par: Anouk Barnes</p>
             </div>
-            <div class="logo-socials">
+            <div class="logo-footer">
                 <p>Réseaux sociaux:</p>
-                <img src="img/facebook.png" href="">
-                <img src="img/instagram.png" href="">
-                <img src="img/linkedin.png" href="">
-                <img src="img/twitter.png" href="">
+                <img src="img/facebook.png" href="#">
+                <img src="img/instagram.png" href="#">
+                <img src="img/linkedin.png" href="#">
+                <img src="img/twitter.png" href="#">
             </div>
         </section>
         <hr>
@@ -196,7 +200,6 @@
             </div>
         </section>
     </footer>
-    </div>
 
 </body>
 </html>

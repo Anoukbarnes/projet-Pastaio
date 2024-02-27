@@ -26,7 +26,7 @@
                 <li><a  href="./index.html">Accueil</a></li>
                 <li><a  class="actuel" href="./reservations.html">Réservations</a></li>
                 <li><a  href="./restaurant.html">Restaurant</a></li>
-                <li><a class="btn-commande" href="./macommande.html">Ma commande</a></li>
+                <li><a class="btn-commande-nav" href="./macommande.html">Ma commande</a></li>
             </ul>
         </nav>
     </header>
@@ -37,9 +37,9 @@
 
             <form  method="get" action= "confirmation.html" class="flex-form">
                 <fieldset class="marg-form form-left">
-                    <div>
-                        <legend class="marg-box">Informations sur la réservation</legend>
-                    </div>
+                    
+                    <legend class="marg-box">Informations sur la réservation</legend>
+                    
 
                     <div class="marg-box">
                         <label for="date-reservation">Date de la réservation</label><span>*</span>
@@ -78,43 +78,43 @@
                     </div>
 
                     <div class="marg-box">
-                        <label for="txt-comment">Commentaires supplémentaire (spécifications, restrictions, allergies) </label>
+                        <label for="txt-comment">Commentaires supplémentaires</label>
                        <div>
-                            <textarea id="txt-comment" name="txt-comment"></textarea> </textarea>
+                            <textarea id="txt-comment" name="txt-comment" placeholder="Spécifications, restrictions, allergies"></textarea> </textarea>
                         </div> 
                     </div>		
                 </fieldset>
 
                 <fieldset class="marg-form form-right">
-                    <div>
-                        <legend class="marg-box">Informations personnelles</legend>
-                    </div>
+                
+                    <legend class="marg-box">Informations personnelles</legend>
+                    
 
                     <div class="marg-box">
                         <label for="first-name">Votre prénom</label><span>*</span>
                         <div>
-                            <input type="text" id="first-name" name="first-name" required>
+                            <input type="text" id="first-name" name="first-name" placeholder="Prénom" required>
                         </div>
                     </div>
 
                     <div class="marg-box">
                         <label>Votre nom</label><span>*</span>
                         <div>
-                            <input type="text" id="last-name" name="last-name" required>
+                            <input type="text" id="last-name" name="last-name" placeholder="Nom"required>
                         </div>
                     </div>
 
                     <div class="marg-box">
                         <label for="tel-client">Votre numéro de téléphone</label><span>*</span>
                         <div>
-                            <input type="tel" id="tel-client" name="tel-client" required>
+                            <input type="tel" id="tel-client" name="tel-client" placeholder="514-123-4567" required>
                         </div>
                     </div>
 
                     <div class="marg-box">
                         <label for="mail-client">Votre courriel</label>
                        <div> 
-                            <input type="email" id="mail-client" name="mail-client">
+                            <input type="email" id="mail-client" name="mail-client" placeholder="xyz@mail.com">
                         </div>
                     </div>
 
@@ -125,7 +125,7 @@
                 </fieldset>
 
                     <div>
-                        <input type="submit" id= "btn-formulaire" value="Confirmer la réservation">
+                        <input type="submit" id= "btn-form" value="Confirmer la réservation">
                     </div>
 
             </form>

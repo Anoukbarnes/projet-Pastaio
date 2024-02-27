@@ -65,11 +65,9 @@
 
 .address {
     display: inline-block;
+    width: 30%;
 }
 
-.map {
-    display: inline-block;
-}
 
 .flex-address h2 {
     font-size: 1.5rem;
@@ -79,4 +77,13 @@
 
 .tel {
     text-decoration: none;
+}
+
+
+@media  screen and (max-width: 960px) {
+    .container {
+        max-width: 960px;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
 }

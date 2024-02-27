@@ -1,8 +1,13 @@
-/* Mise en page de base */
+/* -------------------------------- */
+/* ----- PROPRIÉTÉS GÉNÉRALES ----- */
+/* -------------------------------- */
+
+
 body {
     font-family: 'Source Serif 4', serif;
     margin: 0 auto;
     color: rgb(67, 65, 65);
+    font-size: 18px;
 }
 
 header {
@@ -12,27 +17,39 @@ header {
     padding-right: 5%;
     padding-left: 5%;
     margin: 0 auto;
-    background-color: rgb(244, 244, 244);
     color: rgb(67, 65, 65);
-    font-size: 1.1rem;
-    font-weight: bold;
+    margin-bottom: 0;
 }
 
 nav li {
     display: inline-block;
     margin: 20px 20px;
 }
+
+.actuel{
+    text-decoration: none;
+}
   
 nav {
     text-align: right;
 }
 
-.btn-commande {
+.btn-commande-nav {
     padding: 0.70rem;
-    font-size: 1rem;
+    font-size: 18px;
     border-radius: 10px;
     color:white;
     background-color: #5d8255;
+}
+
+.btn-commande, #btn-form {
+    padding: 0.70rem;
+    border-radius: 10px;
+    color:white;
+    background-color: #5d8255;
+    text-decoration: none;
+    border: none;
+    font-size: 18px;
 }
 
 h1, h2, h3 {
@@ -45,22 +62,18 @@ h1, h2, h3 {
     margin: 0 auto;
 }
 
-a{
-    text-decoration: none;
-    color:black;
+a {
+    color:#343333;
 }
 
-a:hover {
+.btn-commande:hover, #btn-form:hover {
     color:#7e9678;
 }
 
 footer{
-    padding-top: 2rem;
+    padding-top: 3rem;
 }
 
-.background-footer{
-    background-color: rgb(244, 244, 244);
-}
 
 footer p{
     display: inline-block;
@@ -69,6 +82,8 @@ footer p{
 
 footer img{
     padding-right: 0.25rem;
+    width: 8%;
+    display: inline-block;
 }
 
 .flex-footer-cours{
@@ -76,14 +91,38 @@ footer img{
     justify-content: space-between;
 }
 
+.flex-footer-cours p{
+    text-decoration: underline;
+}
+
 .flex-footer-credits{
     display: flex;
     justify-content: space-between;
 }
 
+hr {
+    width: 97%;               
+    background-color:#040404;
+}
+
+.title-page {
+    padding: 1rem 0 2rem 0;
+    font-size: 3rem;
+}
+
+.name-footer{
+    width: 25%
+}
+
+.logo-footer {
+    width: 25%;
+}
 
 
-/* Mise en page accueil*/
+
+/* -------------------------------- */
+/* ------- HOMEPAGE BANNER -------- */
+/* -------------------------------- */
 
 
 .nom-restaurant{
@@ -93,14 +132,16 @@ footer img{
 
 .background-hero {
     background-color: #5d8255;
-    padding-bottom: 6rem;
-    padding-top: 6rem;
+    padding-bottom: 8rem;
+    padding-top: 8rem;
     margin: 0 auto;
 }
 
 .flex-accueil{
     display: flex;
     align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 .description-accueil{
@@ -110,6 +151,12 @@ footer img{
 
 .container-image{
     width:60%;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    border-radius: 1%;
 }
 
 .flex-accueil a{
@@ -130,18 +177,25 @@ footer img{
 }
 
 
-/* Section Menu */
+/* -------------------------------- */
+/* ------------ MENU -------------- */
+/* -------------------------------- */
 
 .container-menu{
     max-width: 800px;
     margin: 0 auto;
     padding: 6rem;
+    background-color: #5d82550f;
+    border-radius: 4%;
+    padding-top: 0.5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .flex-menu{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .carte-menu{
@@ -150,24 +204,38 @@ footer img{
     color:rgb(74, 72, 72);
 }
 
+.btn-accueil{
+    display: flex;
+}
+
+.btn-accueil a{
+    display: inline-block;
+}
+
 .box-gauche{
     padding-right: 4rem;
-    padding-top: 1rem;
 }
 
 .box-droite{
     padding-left: 4rem;
-    padding-top: 1rem;
 }
 
-.container-menu h3{
-    font-size: 2rem;
+.container-menu h3 {
+    font-size: 2.5rem;
     color: #e49c45;
 }
 
 .container-menu h4{
+    font-size: 2rem;
+    color: #e49c45;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+.container-menu h5{
     font-size: 1.5rem;
     color: #e49c45;
+    margin-bottom: 0.5rem;
 }
 
 .flex-prix{
@@ -176,19 +244,21 @@ footer img{
     justify-content: space-between;
 }
 
-/* Section clients satisfaits */
+/* -------------------------------- */
+/* ----------- CLIENTS ------------ */
+/* -------------------------------- */
 
 .section-clients{
-    padding-top: 4%;
-    padding-bottom: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
-.section-clients h5{
+.section-clients h6{
     font-size: 2rem;
     color: rgb(67, 65, 65);
 }
 
-.section-clients h6{
+.nom-section{
     font-size: 1.3rem;
     color:  rgb(67, 65, 65);
 }
@@ -199,7 +269,7 @@ footer img{
     border-color: #5d8255;
     border-width: 3px;
     padding: 1rem;
-    font-size: 14px;
+    font-size: 16px;
     border-radius: 10px;
     margin:1rem;
     color:#343333;
@@ -224,4 +294,107 @@ footer img{
     border-radius: 50%;
     width: 50px;
     float: left;
+}
+
+/* -------------------------------- */
+/* -------- MEDIA QUERIES --------- */
+/* -------------------------------- */
+
+
+/* -------- 1200PX --------- */
+
+@media  screen and (max-width: 1200px) {
+    .container {max-width: 1150px;}
+
+    .flex-clients {justify-content: center;}
+}
+
+
+/* -------- 960PX --------- */
+
+
+@media  screen and (max-width: 960px) {
+    .container {max-width: 900px;}
+
+    .btn-accueil{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn-accueil a{
+        display: inline-block;
+        margin-bottom: 1rem;
+    }
+
+    .description-accueil {width: 25%;}
+
+    .flex-accueil {justify-content: space-around;}
+
+    footer {font-size: 0.9rem;}
+
+    .logo-footer {width: 30%;}
+
+    .container-menu {max-width: 700px;}
+
+    .container-menu h3 {font-size:2rem;}
+
+    .container-menu h4 {font-size:1.7rem;}
+
+    .container-menu h5 {font-size: 1.3rem;}
+
+    .carte-client {width: 25%;}
+
+    
+}
+
+
+/* -------- 570PX --------- */
+
+@media  screen and (max-width: 570px) {
+
+    .container {max-width: 520px;}
+
+    nav {display: none;}
+
+    .flex-accueil {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .description-accueil{
+        width: 80%;
+        text-align: center;
+    }
+
+    .background-hero {padding: 2rem 0 3rem 0;}
+
+ /* Menu */
+
+    .container-menu {padding-top: 1.2rem;}
+
+    .container-menu h3 {margin-bottom: 0;}
+
+    .flex-menu {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .box-gauche, .box-droite {
+        padding: 0;
+        width: 70%;
+    }
+
+    .flex-menu h4 {padding-bottom: 2rem;}
+
+    /* Clients */
+
+    .carte-client {width: 35%}
+
+    .nom-client {padding-left: 0.3rem;}
+
+    .section-clients h6, .nom-section{
+        margin: 0;
+        padding: 0.5rem 0 1rem 0;
+    }
+
 }
