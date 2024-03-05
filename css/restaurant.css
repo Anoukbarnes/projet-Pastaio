@@ -87,3 +87,43 @@
         margin-right: 2rem;
     }
 }
+
+@media  screen and (max-width: 570px) {
+    
+    .container {max-width: 520px;}
+
+    .title-page { 
+        font-size: 2.5rem;
+        padding: 0;
+    }
+
+    .address {
+        width: 100%;
+        margin-bottom: 8%;
+    }
+
+    .flex-address {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .flex-address h2 {
+        padding-top: 5%;
+    }
+
+
+    .map-responsive{
+        overflow:hidden;
+        padding-bottom:70%;
+        position:relative;
+        height:0;
+    }
+    
+    .map-responsive iframe{   
+        height:100%;
+        width:100%;
+        position:absolute;
+    }
+
+
+}

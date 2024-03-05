@@ -12,7 +12,7 @@
     width:24%;
     height: 60%;
     margin: 0 auto;
-    background-color: #5d82558c;
+    background-color: #86898638;
     padding: 1.5rem 2rem 1.5rem 2rem;
 }
 
@@ -42,7 +42,7 @@ table{
 } 
 
 .colored-row {
-    background-color: #5d82558c;
+    background-color: #8689866e;
 }
 
 .rounded{
@@ -58,4 +58,29 @@ table{
 
 .flex-prix a{
     margin-top: 5%;
+}
+
+
+
+@media  screen and (max-width: 570px) {
+    
+    .title-page { 
+        font-size: 2.5rem;
+        padding: 0;
+    }
+
+    .flex-commande {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .tables {width: 85%;}
+
+    .card {width: 49%;}
+
+    
+
+   
+
 }
