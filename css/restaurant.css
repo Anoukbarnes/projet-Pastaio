@@ -98,13 +98,12 @@
     }
 
     .address {
-        width: 100%;
         margin-bottom: 8%;
     }
 
     .flex-address {
         flex-direction: column;
-        align-content: center;
+        align-items: center;
     }
 
     .flex-address h2 {
@@ -115,6 +114,7 @@
     .map-responsive{
         overflow:hidden;
         padding-bottom:70%;
+        width: 90%;
         position:relative;
         height:0;
     }
