@@ -34,10 +34,13 @@ input {
     padding: 0.3rem;
 }
 
-
+input:focus {
+   background-color:  #c5dfe9;
+}
 
 label {
     margin: 2% 2% 0 0;
+    font-size: 1.1rem;
 }
 
 textarea {
@@ -45,6 +48,10 @@ textarea {
     min-width: 60%;
     min-height: 3.75rem;
     margin-top: 2%;
+}
+
+textarea:focus {
+    background-color:  #c5dfe9;
 }
 
 #nb-personnes {

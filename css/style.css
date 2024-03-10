@@ -46,6 +46,7 @@ nav {
     padding: 0.70rem;
     border-radius: 10px;
     background-color: #4e798c;
+    color: #bdabb1;
 }
 
 .btn-commande, #btn-form {
@@ -117,13 +118,9 @@ hr {
 }
 
 .name-footer{
-    width: 25%
+    display: inline-block;
 }
 
-.logo-footer {
-    display: inline-block;
-    width: 25%;
-}
 
 .logo-socials {
     display: inline-block;
@@ -152,7 +149,6 @@ hr {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 100%;
 }
 
 .description-accueil{
@@ -299,8 +295,7 @@ hr {
 
 .flex-clients img{
     border-radius: 50%;
-    width: 50px;
-    float: left;
+    width: 20%;
 }
 
 /* -------------------------------- */
@@ -311,16 +306,20 @@ hr {
 /* -------- 1200PX --------- */
 
 @media  screen and (max-width: 1200px) {
-    .container {max-width: 1100px;}
+    .container {
+        margin-left: 4%;
+        margin-right: 4%;
+    }
 
     .flex-clients {justify-content: center;}
 
+    .flex-clients img{width:20%;}
+
     .description-accueil {
         width: 40%;
-        margin-left: 5%;
     }
 
-    .container-image {width: 70%;}
+    .container-image img{width: 90%;}
 
     .background-hero {padding-top: 2rem;}
 }
@@ -330,7 +329,10 @@ hr {
 
 
 @media  screen and (max-width: 960px) {
-    .container {max-width: 890px;}
+    .container {
+        margin-left: 4%;
+        margin-right: 4%;
+    }
 
     header {padding-left: 2%;}
 
@@ -351,17 +353,21 @@ hr {
         margin-bottom: 2rem;
     }
 
-    .description-accueil {width: 28%;}
-
     .flex-accueil {justify-content: space-around;}
 
-    .container-image img {margin-left: 8%;}
+    .container-image img {
+        margin-left: 8%;
+    }
+
+    .flex-clients img {width: 25%;}
 
     footer {font-size: 0.9rem;}
 
-    .logo-footer {width: 30%;}
 
-    .container-menu {max-width: 700px;}
+    .container-menu {
+        max-width: 75%;
+        padding: 5%;
+    }
 
     .container-menu h3 {font-size:2rem;}
 
@@ -378,7 +384,10 @@ hr {
 
 @media  screen and (max-width: 570px) {
 
-    .container {max-width: 520px;}
+    .container {
+        margin-left:4%;
+        margin-right: 4%;
+    }
 
     #nav-long {display: none !important;}
 
@@ -391,7 +400,7 @@ hr {
 
     .flex-accueil {
         flex-direction: column;
-        width: 80%;
+        width: 90%;
     }
 
    .container-image {
@@ -414,7 +423,6 @@ hr {
 
     .container-menu {
         padding-top: 1.2rem;
-        margin: 3rem 2rem 3rem 2rem;
         border-radius: 1%;
     }
 
@@ -427,7 +435,7 @@ hr {
 
     .box-gauche, .box-droite {
         padding: 0;
-        width: 70%;
+        width: 60%;
     }
 
     .flex-menu h4 {padding-bottom: 2rem;}
@@ -452,8 +460,22 @@ hr {
 
 /* Footer */
 
-    .name-footer {width: 50%;}
+    .name-footer {
+        display: inline-block;
+    }
 
-    .logo-footer {width: 50%;}
+    .logo-footer {
+        display: inline-block;
+    }
+
+}
+
+
+@media  screen and (max-width: 560px) {
+
+    .flex-footer-credits {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
 }
