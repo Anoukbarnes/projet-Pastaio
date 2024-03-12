@@ -20,21 +20,21 @@
 
 <body>
     <header>
-        <h2><a href="./index.html"><img src="img/logo.png" alt="logo"></h2>
-            <nav>
-                <div>
-                    <ul id="nav-long">
-                        <li><a  class="actuel" href="./index.html">Accueil</a></li>
-                        <li><a  href="./reservations.html">Réservations</a></li>
-                        <li><a  href="./restaurant.html">Restaurant</a></li>
-                        <li><a  class="btn-commande-nav" href="./macommande.html">Ma commande</a></li>
-                        
-                    </ul>
-                </div>
-                <div id="nav-hamburger">
-                    <img  src="img/nav-hamburger.png" alt="Icône menu hamburger">
-                </div>
-            </nav>
+        <a href="./index.html"></a><img src="img/logo.png" alt="logo">
+        <nav>
+            <div>
+                <ul id="nav-long">
+                    <li><a class="actuel" href="./index.html">Accueil</a></li>
+                    <li><a href="./reservations.html">Réservations</a></li>
+                    <li><a href="./restaurant.html">Restaurant</a></li>
+                    <li><a class="btn-commande-nav" href="./macommande.html">Ma commande</a></li>
+                </ul>
+            </div>
+
+            <div id="nav-hamburger">
+                <img  src="img/nav-hamburger.png" alt="Icône menu hamburger">
+            </div>
+        </nav>
     </header>
 
     <main>
@@ -42,10 +42,9 @@
             <h1 class="title-page">Réservations</h1>
 
             <form  method="get" action= "confirmation.html" class="flex-form">
+                
                 <fieldset class="marg-form form-left">
-                    
-                    <legend class="marg-box">Informations sur la réservation</legend>
-                    
+                    <legend class="marg-box">Informations sur la réservation</legend> 
 
                     <div class="marg-box">
                         <label for="date-reservation">Date de la réservation</label><span>*</span>
@@ -72,30 +71,26 @@
                         <label>Réservation pour</label><span>*</span>
 
                         <div>
-                            <input type="radio" name="rdo-reservation" id="salle" value="salle" required>
+                            <input type="radio" name="rdo-reservation" id="salle" value="salle" checked required>
                             <label for="salle">Salle à manger</label>
                         </div>
-                    
                         <div>
                             <input type="radio" name="rdo-reservation" id="terrasse" value="terrasse" required>
-                            <label for="sat-non">Terrasse</label>
+                            <label for="terrasse">Terrasse</label>
                         </div>
-            
                     </div>
 
                     <div class="marg-box">
                         <label for="txt-comment">Commentaires supplémentaires</label>
                        <div>
-                            <textarea id="txt-comment" name="txt-comment" placeholder="Spécifications, restrictions, allergies"></textarea> </textarea>
+                            <textarea id="txt-comment" name="txt-comment" placeholder="Spécifications, restrictions, allergies"></textarea>
                         </div> 
                     </div>		
                 </fieldset>
 
                 <fieldset class="marg-form form-right">
-                
                     <legend class="marg-box">Informations personnelles</legend>
                     
-
                     <div class="marg-box">
                         <label for="first-name">Votre prénom</label><span>*</span>
                         <div>
@@ -106,14 +101,14 @@
                     <div class="marg-box">
                         <label>Votre nom</label><span>*</span>
                         <div>
-                            <input type="text" id="last-name" name="last-name" placeholder="Nom"required>
+                            <input type="text" id="last-name" name="last-name" placeholder="Nom" required>
                         </div>
                     </div>
 
                     <div class="marg-box">
                         <label for="tel-client">Votre numéro de téléphone</label><span>*</span>
                         <div>
-                            <input type="tel" id="tel-client" name="tel-client" placeholder="514-123-4567" required>
+                            <input type="tel" id="tel-client" name="tel-client" placeholder="123-456-7890" required>
                         </div>
                     </div>
 
@@ -130,7 +125,7 @@
                     </div>
                 </fieldset>
 
-                    <div>
+                    <div class="btn-form">
                         <input type="submit" id= "btn-form" value="Confirmer la réservation">
                     </div>
 
@@ -139,33 +134,31 @@
 
     </main>
 
-    <div class="background-footer">
-        <footer class="container">
-            <section class="flex-footer-credits">
-                <div>
-                    <img src="img/enveloppe.png" href="mailto:anouk721@gmail.com">
-                    <p>Réalisé par: Anouk Barnes</p>
-                </div>
-                <div class="logo-socials">
-                    <p>Réseaux sociaux:</p>
-                    <img src="img/facebook.png" href="">
-                    <img src="img/instagram.png" href="">
-                    <img src="img/linkedin.png" href="">
-                    <img src="img/twitter.png" href="">
-                </div>
-            </section>
-            <hr>
-            <section class="flex-footer-cours">
-                <div>
-                    <p>Intégration web 1</p>
-                </div>
-                <div>
-                    <p>Cégep de Trois-Rivières</p> 
-                    <p>Hiver 2023</p>
-                </div>
-            </section>
-        </footer>
+    <footer class="container">
+        <div class="flex-footer-credits">
+            <div class="name-footer">
+                <a href="mailto:anouk721@gmail.com"><img src="img/enveloppe.png" alt="courriel"></a>
+                <p>Réalisé par: Anouk Barnes</p>
+            </div>
+            <div class="logo-socials">
+                <p>Réseaux sociaux:</p>
+                <a href="#"><img src="img/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="img/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="img/linkedin.png" alt="linkedin"></a>
+                <a href="#"><img src="img/twitter.png" alt="Twitter"></a>
+            </div>
         </div>
+        <hr>
+        <div class="flex-footer-cours">
+            <div>
+                <p>Intégration web 1</p>
+            </div>
+            <div>
+                <p>Cégep de Trois-Rivières</p> 
+                <p>Hiver 2023</p>
+            </div>
+        </div>
+    </footer>
     
     </body>
     </html>
