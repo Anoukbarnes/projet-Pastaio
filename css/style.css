@@ -72,6 +72,10 @@ a {
     color:#343333;
 }
 
+a:hover{
+    color:#2e4b56;
+}
+
 .btn-commande:hover, #btn-form:hover, .btn-commande-nav:hover{
     color:#2e4b56;
 }
