@@ -2,7 +2,6 @@
 /* ----- PROPRIÉTÉS GÉNÉRALES ----- */
 /* -------------------------------- */
 
-
 body {
     font-family: 'Source Serif 4', serif;
     margin: 0 auto;
@@ -22,12 +21,12 @@ header {
     margin-bottom: 0;
 }
 
-#nav-hamburger {display: none !important;}
 
 #nav-long {
         display: inline-block !important;
-        width: 100%;
-    }
+}
+
+#nav-hamburger {display: none !important;}
 
 nav li {
     display: inline-block;
@@ -43,14 +42,14 @@ nav {
 }
 
 .btn-commande-nav {
-    padding: 0.70rem;
+    padding: 0.70em;
     border-radius: 10px;
     background-color: #4e798c;
     color: #bdabb1;
 }
 
 .btn-commande, #btn-form {
-    padding: 0.70rem;
+    padding: 0.7em;
     border-radius: 10px;
     background-color: #4e798c;
     text-decoration: none;
@@ -78,19 +77,19 @@ a {
 }
 
 footer{
-    padding-top: 3rem;
+    padding-top: 4%;
 }
-
 
 footer p{
     display: inline-block;
-    padding: 0 1rem 1rem 0;
+    padding: 0 1em 0.7em 0;
 }
 
 footer img{
-    padding-right: 0.25rem;
+    padding-right: 0.2em;
     width: 8%;
     display: inline-block;
+    box-sizing: border-box;
 }
 
 .flex-footer-cours{
@@ -100,20 +99,18 @@ footer img{
 
 .flex-footer-cours p{
     text-decoration: underline;
+    padding-top: 1em;
 }
 
 .flex-footer-credits{
     display: flex;
     justify-content: space-between;
-}
-
-hr {
-    width: 97%;               
-    background-color:#040404;
+    border-bottom: solid;
+    padding-bottom: 1em;
 }
 
 .title-page {
-    padding: 1rem 0 2rem 0;
+    padding: 1em 0 1em 0;
     font-size: 3rem;
 }
 
@@ -138,35 +135,28 @@ hr {
     color:#2a2b2a;
 }
 
-.background-hero {
-    background-color: #8c9da4;
-    padding-bottom: 8rem;
-    padding-top: 5rem;
-    margin: 0 auto;
-}
-
 .flex-accueil{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    padding: 4%;
 }
 
 .description-accueil{
     width: 30%;
-    padding-right: 1rem;
+    padding-right: 1em;
 }
 
-
-.container-image img {
+.flex-accueil img {
     border-radius: 3%;
     width: 100%;
 }
 
 .flex-accueil a{
-    padding: 0.5rem;
+    padding: 0.5em;
     border: solid;
     border-color: #2a2b2a;
-    margin-right: 1rem;
+    margin-right: 1em;
     color:#2a2b2a;
 }
 
@@ -175,7 +165,7 @@ hr {
 }
 
 .flex-accueil p{
-    padding-bottom: 3rem;
+    padding-bottom: 3em;
     color:#2a2b2a;
 }
 
@@ -185,20 +175,18 @@ hr {
 /* -------------------------------- */
 
 .container-menu{
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 6rem;
+    max-width: 50%;
+    padding: 5%;
     background-color: #86898638;
-    border-radius: 4%;
-    padding-top: 0.5rem;
-    margin-top: 3rem;
-    margin-bottom: 10rem;
+    border-radius: 20px;
+    margin: 3em auto;
 }
 
 .flex-menu{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: flex-start;
 }
 
 .carte-menu{
@@ -216,33 +204,33 @@ hr {
 }
 
 .box-gauche{
-    padding-right: 4rem;
+    padding-right: 3.5em;
 }
 
 .box-droite{
-    padding-left: 4rem;
+    padding-left: 3.5em;
 }
 
 .container-menu h3 {
     font-size: 2.5rem;
+    margin: 0;
 }
 
 .container-menu h4{
     font-size: 2rem;
     margin: 0 auto;
-    padding-top: 2rem;
+    padding-top: 2em;
 }
 
 .container-menu h5{
     font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.5em;
 }
 
 .flex-prix{
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-    margin-bottom: 0.5rem;
 }
 
 /* -------------------------------- */
@@ -256,23 +244,23 @@ hr {
 
 .section-clients h6{
     font-size: 2.5rem;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
 }
 
 .nom-section{
     font-size: 1.6rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0.8em;
 }
 
 .carte-client{
     width: 26%;
     border:solid;
     border-width: 3px;
-    padding: 1rem;
+    padding: 1em;
     font-size: 16px;
     border-radius: 10px;
-    margin:1rem;
+    margin:1em;
     background-color:#e3e0d996;
 }
 
@@ -290,7 +278,7 @@ hr {
 
 .nom-client{
     display: inline-block;
-    padding-left: 1rem;
+    padding-left: 1em;
 }
 
 .flex-clients img{
@@ -319,9 +307,14 @@ hr {
         width: 40%;
     }
 
-    .container-image img{width: 90%;}
+    .container-menu {
+        max-width: 75%;
+        padding: 5%;
+        margin: 3em auto;
+    }
 
-    .background-hero {padding-top: 2rem;}
+    .container-image-banner img{width: 90%;}
+
 }
 
 
@@ -329,10 +322,6 @@ hr {
 
 
 @media  screen and (max-width: 960px) {
-    .container {
-        margin-left: 4%;
-        margin-right: 4%;
-    }
 
     header {padding-left: 2%;}
 
@@ -350,12 +339,12 @@ hr {
     
     .btn-accueil a{
         display: inline-block;
-        margin-bottom: 2rem;
+        margin-bottom: 2em;
     }
 
     .flex-accueil {justify-content: space-around;}
 
-    .container-image img {
+    .container-image-banner img {
         margin-left: 8%;
     }
 
@@ -367,6 +356,7 @@ hr {
     .container-menu {
         max-width: 75%;
         padding: 5%;
+        margin: 3em auto;
     }
 
     .container-menu h3 {font-size:2rem;}
@@ -384,11 +374,6 @@ hr {
 
 @media  screen and (max-width: 570px) {
 
-    .container {
-        margin-left:4%;
-        margin-right: 4%;
-    }
-
     #nav-long {display: none !important;}
 
     #nav-hamburger {
@@ -400,16 +385,24 @@ hr {
 
     .flex-accueil {
         flex-direction: column;
-        width: 90%;
     }
 
-   .container-image {
-    width:90%;
-   }
+    .flex-accueil p {
+        padding-bottom: 18em;
+        margin-top:0;
+        font-size: 1.1em;
+        font-weight: 600;
+    }
 
-   .container-image img{
-        margin-left:0;
+   .flex-accueil img{
+        margin-left: 0;
         width: 100%;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        z-index: -1;
+        opacity: 0.85;
+        border-radius: 0;
     }
 
     .description-accueil{
@@ -417,13 +410,16 @@ hr {
         text-align: center;
     }
 
-    .background-hero {padding: 2rem 0 3rem 0;}
+    .nom-restaurant {
+        margin: 0;
+    }
 
  /* Menu */
 
     .container-menu {
-        padding-top: 1.2rem;
-        border-radius: 1%;
+        padding-top: 1em;
+        border-radius: 20px;
+        margin: 3em auto;
     }
 
     .container-menu h3 {margin-bottom: 0;}
@@ -449,11 +445,11 @@ hr {
         justify-content: space-around;
     }
 
-    .nom-client {padding-left: 0.3rem;}
+    .nom-client {padding-left: 0.3em;}
 
     .section-clients h6, .nom-section{
         margin: 0;
-        padding: 0.5rem 0 1rem 0;
+        padding: 0.5em 0 1em 0;
     }
 
     .section-clients h6 {font-size: 1.8rem;}

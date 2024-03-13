@@ -9,7 +9,6 @@
 .flex-form {
     display: flex;
     justify-content: space-around;
-    width: 100%;
     flex-wrap: wrap;
 }
 
@@ -30,8 +29,8 @@ legend {
 /* -------------------------------- */
 
 input {
-    margin: 2% 0 0 0;
-    padding: 0.3rem;
+    margin-top: 2%;
+    padding: 0.3em;
 }
 
 input:focus {
@@ -46,7 +45,7 @@ label {
 textarea {
     font-family: Arial, Helvetica, sans-serif;
     min-width: 60%;
-    min-height: 3.75rem;
+    min-height: 5em;
     margin-top: 2%;
 }
 
@@ -55,7 +54,7 @@ textarea:focus {
 }
 
 #nb-personnes {
-    width: 2.5rem;
+    width: 2.5em;
 }
 
 #mail-client {
@@ -70,14 +69,10 @@ textarea:focus {
 /* -------- 1200PX --------- */
 
 @media  screen and (max-width: 1200px) {
-    .container {max-width: 1100px;}
-}
-
-/* -------- 960PX --------- */
-
-
-@media  screen and (max-width: 960px) {
-    .container {max-width: 890px;}
+    .container {
+        margin-left: 4%;
+        margin-right: 4%;
+    }
 }
 
 /* -------- 570PX --------- */
@@ -98,6 +93,5 @@ textarea:focus {
         width: 80%;
         margin-bottom: 2rem;
     }
-
 
 }
