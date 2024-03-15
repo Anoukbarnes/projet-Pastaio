@@ -28,12 +28,12 @@ legend {
 /* ------------ FIELDS ------------ */
 /* -------------------------------- */
 
-input {
+input, select {
     margin-top: 2%;
     padding: 0.3em;
 }
 
-input:focus {
+input:focus, select:focus {
    background-color:  #c5dfe9;
 }
 
