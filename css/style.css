@@ -179,7 +179,7 @@ footer img{
 /* -------------------------------- */
 
 .container-menu{
-    max-width: 50%;
+    max-width: 41%;
     padding: 5%;
     background-color: #86898638;
     border-radius: 20px;
@@ -327,6 +327,13 @@ footer img{
 
 @media  screen and (max-width: 960px) {
 
+    #nav-long {display: none !important;}
+
+    #nav-hamburger {
+        display: block !important;
+        width: 100%;
+    }
+
     header {padding-left: 2%;}
 
     header img {width: 80%;}
@@ -377,13 +384,6 @@ footer img{
 /* -------- 570PX --------- */
 
 @media  screen and (max-width: 570px) {
-
-    #nav-long {display: none !important;}
-
-    #nav-hamburger {
-        display: block !important;
-        width: 100%;
-    }
 
     body {font-size: 1rem;}
 
