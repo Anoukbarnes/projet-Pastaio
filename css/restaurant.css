@@ -172,6 +172,7 @@
 /* ------ Addresse ------- */
     .address {
         margin-bottom: 8%;
+        width: 27%;
     }
 
     .flex-address {
@@ -183,17 +184,18 @@
         padding-top: 5%;
     }
 
-    .map-responsive{
+    .map{
         overflow:hidden;
         padding-bottom:70%;
         width: 90%;
         position:relative;
-        height:0;
     }
-
-    .map-responsive iframe{   
+    
+    .map iframe{   
         height:100%;
         width:100%;
         position:absolute;
     }
+
+    
 }
