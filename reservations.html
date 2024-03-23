@@ -20,12 +20,12 @@
 
 <body>
     <header>
-        <h2><a href="./index.html"><img src="img/logo.png" alt="logo"></h2></a>
+        <h2><a href="./index.html"><img src="img/logo.png" alt="logo"></a></h2>
         <nav>
             <div>
                 <ul id="nav-long">
-                    <li><a class="actuel" href="./index.html">Accueil</a></li>
-                    <li><a href="./reservations.html">Réservations</a></li>
+                    <li><a href="./index.html">Accueil</a></li>
+                    <li><a class="actuel" href="./reservations.html">Réservations</a></li>
                     <li><a href="./restaurant.html">Restaurant</a></li>
                     <li><a class="btn-commande-nav" href="./macommande.html">Ma commande</a></li>
                 </ul>
@@ -56,7 +56,7 @@
                     <div class="marg-box">
                         <label for="nb-personnes">Nombre de personnes</label><span>*</span>
                         <div>
-                            <input type="number" id="nb-personnes" name="nbr-personnes" required>
+                            <input type="number" id="nb-personnes" name="nbr-personnes" min="1" required>
                         </div>
                     </div>
 
@@ -64,6 +64,7 @@
                         <label for="time-reservation">Heure de la réservation</label><span>*</span>
                         <div>
                             <select name="time-reservation" id="time-reservation" required>
+                                <option value="">Sélectionnez une heure</option>
                                 <option value="12:00">12:00</option>
                                 <option value="12:30">12:30</option>
                                 <option value="13:00">13:00</option>
@@ -148,7 +149,7 @@
 
     </main>
 
-    <footer class="container">
+    <footer>
         <div class="flex-footer-credits">
             <div class="name-footer">
                 <a href="mailto:anouk721@gmail.com"><img src="img/enveloppe.png" alt="courriel"></a>
@@ -162,7 +163,7 @@
                 <a href="#"><img src="img/twitter.png" alt="Twitter"></a>
             </div>
         </div>
-        
+        <hr>
         <div class="flex-footer-cours">
             <div>
                 <p>Intégration web 1</p>
