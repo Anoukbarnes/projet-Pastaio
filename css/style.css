@@ -22,9 +22,7 @@ header {
 }
 
 
-#nav-long {
-        display: inline-block !important;
-}
+#nav-long {display: inline-block !important;}
 
 #nav-hamburger {display: none !important;}
 
@@ -81,7 +79,7 @@ a:hover{
 }
 
 footer{
-    padding-top: 4%;
+    padding: 1.5% 2%;
 }
 
 footer p{
@@ -109,7 +107,6 @@ footer img{
 .flex-footer-credits{
     display: flex;
     justify-content: space-between;
-    border-bottom: solid;
     padding-bottom: 1em;
 }
 
@@ -127,26 +124,29 @@ footer img{
     display: inline-block;
 }
 
-
+hr {
+    border: solid black;
+    border-width: 1px;
+}
 
 /* -------------------------------- */
 /* ------- HOMEPAGE BANNER -------- */
 /* -------------------------------- */
 
 
-.nom-restaurant{
+.nom-restaurant {
     font-size: 3.5rem;
     color:#2a2b2a;
 }
 
-.flex-accueil{
+.flex-accueil {
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding: 4%;
 }
 
-.description-accueil{
+.description-accueil {
     width: 30%;
     padding-right: 1em;
 }
@@ -156,7 +156,7 @@ footer img{
     width: 100%;
 }
 
-.flex-accueil a{
+.flex-accueil a {
     padding: 0.5em;
     border: solid;
     border-color: #2a2b2a;
@@ -164,11 +164,11 @@ footer img{
     color:#2a2b2a;
 }
 
-.flex-accueil a:hover{
+.flex-accueil a:hover {
     color: #2e4b56;
 }
 
-.flex-accueil p{
+.flex-accueil p {
     padding-bottom: 3em;
     color:#2a2b2a;
 }
@@ -178,41 +178,37 @@ footer img{
 /* ------------ MENU -------------- */
 /* -------------------------------- */
 
-.container-menu{
-    max-width: 41%;
+.container-menu {
+    max-width: 45%;
     padding: 5%;
     background-color: #86898638;
     border-radius: 20px;
     margin: 3em auto;
 }
 
-.flex-menu{
+.flex-menu {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
 }
 
-.carte-menu{
+.carte-menu {
     display: inline-block;
     width: 35%;
     color:rgb(50, 50, 50);
 }
 
-.btn-accueil{
+.btn-accueil {
     display: flex;
 }
 
-.btn-accueil a{
+.btn-accueil a {
     display: inline-block;
 }
 
-.box-gauche{
+.box-gauche, .box-droite {
     padding-right: 3.5em;
-}
-
-.box-droite{
-    padding-left: 3.5em;
 }
 
 .container-menu h3 {
@@ -220,18 +216,18 @@ footer img{
     margin: 0;
 }
 
-.container-menu h4{
+.container-menu h4 {
     font-size: 2rem;
     margin: 0 auto;
     padding-top: 2em;
 }
 
-.container-menu h5{
+.container-menu h5 {
     font-size: 1.5rem;
     margin-bottom: 0.5em;
 }
 
-.flex-prix{
+.flex-prix {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
@@ -241,23 +237,23 @@ footer img{
 /* ----------- CLIENTS ------------ */
 /* -------------------------------- */
 
-.section-clients{
+.section-clients {
     padding-top: 2%;
     padding-bottom: 3%;
 }
 
-.section-clients h6{
+.section-clients h6 {
     font-size: 2.5rem;
     margin-top: 0.5em;
     margin-bottom: 1em;
 }
 
-.nom-section{
+.nom-section {
     font-size: 1.6rem;
     padding-bottom: 0.8em;
 }
 
-.carte-client{
+.carte-client {
     width: 26%;
     border:solid;
     border-width: 3px;
@@ -268,24 +264,26 @@ footer img{
     background-color:#e3e0d996;
 }
 
-.flex-img-client {display: flex;}
+.flex-img-client {
+    display: flex;
+}
 
-.background-clients{
+.background-clients {
     background-color: #86898638;
 }
 
-.flex-clients{
+.flex-clients {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.nom-client{
+.nom-client {
     display: inline-block;
     padding-left: 1em;
 }
 
-.flex-clients img{
+.flex-clients img {
     border-radius: 50%;
     width: 20%;
 }
@@ -304,8 +302,6 @@ footer img{
     }
 
     .flex-clients {justify-content: center;}
-
-    .flex-clients img{width:20%;}
 
     .description-accueil {
         width: 40%;
@@ -348,10 +344,7 @@ footer img{
         align-items: center;
     }
     
-    .btn-accueil a{
-        display: inline-block;
-        margin-bottom: 2em;
-    }
+    .btn-accueil a {margin-bottom: 2em;}
 
     .flex-accueil {justify-content: space-around;}
 
@@ -361,7 +354,10 @@ footer img{
 
     .flex-clients img {width: 25%;}
 
-    footer {font-size: 0.9rem;}
+    footer {
+        font-size: 0.9rem;
+        margin-top: 5%;
+    }
 
 
     .container-menu {
@@ -392,22 +388,27 @@ footer img{
     }
 
     .flex-accueil p {
+        /*
         padding-bottom: 18em;
         margin-top:0;
         font-size: 1.1em;
         font-weight: 600;
+        */
+        display: none;
     }
 
-   .flex-accueil img{
-        margin-left: 0;
-        width: 100%;
-        position: absolute;
-        left: 0px;
-        top: 0px;
-        z-index: -1;
-        opacity: 0.85;
-        border-radius: 0;
+    .flex-accueil img{
+        display: none;
     }
+
+    .accueil-img{
+        background-image: url(../img/accueil.jpg);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+        position: absolute;
+    }
+    
 
     .description-accueil{
         width: 80%;
@@ -416,6 +417,8 @@ footer img{
 
     .nom-restaurant {
         margin: 0;
+        padding-bottom: 5.8em;
+        font-size: 4.5rem;
     }
 
  /* Menu */
