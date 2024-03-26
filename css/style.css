@@ -476,6 +476,15 @@ hr {
 
 @media  screen and (max-width: 560px) {
 
+    .nom-restaurant {
+        padding-bottom: 4.3em;
+    }
+
+    .flex-accueil{
+        padding: 0;
+        margin-right:0;
+    }
+
     .flex-footer-credits {
         flex-wrap: wrap;
         justify-content: center;
