@@ -6,6 +6,7 @@ before_script:
 pages:
   script:
     - sass src/styles.scss public/styles.css --style=compressed
+    - cp -r * public/
   artifacts:
     paths:
       # The folder that contains the files to be exposed at the Page URL
