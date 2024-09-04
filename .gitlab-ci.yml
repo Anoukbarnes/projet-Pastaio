@@ -1,12 +1,23 @@
 image: node:latest
 
+stages:
+  - install
+  - deploy
+
+install:
+  stage: install
+  script:
+    - npm ci
+  artifacts:
+    paths:
+      - node_modules/
+
 pages:
   stage: deploy
   script:
-    - mkdir -p public # Créer le dossier public s'il n'existe pas déjà
-    - rsync -av --exclude='public' . public/ # Copier tous les fichiers sauf le dossier public
+    - echo 'Aucune construction nécessaire pour HTML/CSS'
   artifacts:
     paths:
-      - public # Le dossier contenant les fichiers à exposer sur GitLab Pages
-  rules:
-    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH # Déployer uniquement sur la branche par défaut
+      - public
+  only:
+    - main
