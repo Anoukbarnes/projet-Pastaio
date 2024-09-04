@@ -1,17 +1,12 @@
-# The Docker image that will be used to build your app
 image: node:latest
-# Functions that should be executed before the build script is run
-before_script:
-  - npm install -g sass
+
 pages:
+  stage: deploy
   script:
-    - sass src/styles.scss public/styles.css --style=compressed
-    - cp -r * public/
+    - mkdir -p public # Créer le dossier public s'il n'existe pas déjà
+    - cp -r * public/ # Copier tous les fichiers dans le dossier public
   artifacts:
     paths:
-      # The folder that contains the files to be exposed at the Page URL
-      - public
+      - public # Le dossier contenant les fichiers à exposer sur GitLab Pages
   rules:
-    # This ensures that only pushes to the default branch will trigger
-    # a pages deploy
-    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
+    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH # Déployer uniquement sur la branche par défaut
