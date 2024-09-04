@@ -4,7 +4,7 @@ pages:
   stage: deploy
   script:
     - mkdir -p public # Créer le dossier public s'il n'existe pas déjà
-    - cp -r * public/ # Copier tous les fichiers dans le dossier public
+    - rsync -av --exclude='public' . public/ # Copier tous les fichiers sauf le dossier public
   artifacts:
     paths:
       - public # Le dossier contenant les fichiers à exposer sur GitLab Pages
