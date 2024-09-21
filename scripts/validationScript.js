@@ -3,13 +3,9 @@ const firstname = document.getElementById('first-name');
 const lastname = document.getElementById('last-name');
 const email = document.getElementById('mail-client');
 const tel = document.getElementById('tel-client');
-const formRadios = form.querySelectorAll('input[type="radio"]');
 const time = document.getElementById('time-reservation');
 const nbPersonnes = document.getElementById('nb-personnes');
 const date = document.getElementById('date-reservation');
-
-console.log("nb-personnes:", nbPersonnes)
-
 
 if (form) {
     form.addEventListener('submit', e => {
@@ -35,12 +31,18 @@ const validateInputs = () => {
     if (firstnameValue === '') {
         setError(firstname, 'Veuillez entrer votre prénom');
         noError = false;
+    } else if (firstnameValue.length < 2) {
+        setError(firstname, 'Veuillez au moins 2 caractères');
+        noError = false;
     } else {
         setSuccess(firstname);
     }
 
     if (lastnameValue === '') {
         setError(lastname, 'Veuillez entrer votre nom');
+        noError = false;
+    } else if (lastnameValue.length < 2) {
+        setError(lastname, 'Veuillez au moins 2 caractères');
         noError = false;
     } else {
         setSuccess(lastname);
@@ -73,36 +75,17 @@ const validateInputs = () => {
         setSuccess(time);
     }
 
-    formRadios.forEach((radio) => {
-        if (!radio.checked) {
-            setError(formRadios, 'Veuillez sélectionner une des deux options');
-            noError = false;
-        }
-        else  {
-            setSuccess(formRadios)
-        }
-      });
-
     if (dateValue === '') {
         setError(date, 'Veuillez entrer la date souhaitée');
         noError = false;
     } else {
-        const currentDate = new Date();
-        const currentYear = currentDate.getFullYear();
-        const currentMonth = currentDate.getMonth();
-        const currentDay = currentDate.getDate();
-        
-        const dateDate = new Date(dateValue);
-        const dateYear = dateDate.getFullYear();
-        const dateMonth = dateDate.getMonth();
-        const dateDay = dateDate.getDate();
-
-        if (isNaN(dateDate.getTime())) {
+        const currentDate = new Date(); 
+        const dateEntered = new Date(dateValue);
+    
+        if (isNaN(dateEntered.getTime())) {
             setError(date, 'Veuillez entrer une date valide');
             noError = false;
-        } else if (dateYear < currentYear || 
-                  (dateYear === currentYear && dateMonth < currentMonth) ||
-                  (dateYear === currentYear && dateMonth === currentMonth && dateDay < currentDay)) {
+        } else if (dateEntered < currentDate) {
             setError(date, 'Veuillez entrer une date après la date actuelle');
             noError = false;
         } else {
@@ -113,11 +96,13 @@ const validateInputs = () => {
     if (nbPersonnesValue === '') {
         setError(nbPersonnes, 'Veuillez entrer le nombre de personnes');
         noError = false;
+    } else if (nbPersonnesValue < 1 || nbPersonnesValue > 12) {
+        setError(nbPersonnes, 'Entre une et 12 personnes');
+        noError = false;
     } else {
         setSuccess(nbPersonnes);
     } 
 
-    
 
     console.log("fin");
 
