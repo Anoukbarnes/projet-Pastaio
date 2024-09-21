@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
 </head>
 
-<body class="accueil-img">
+<body>
     <header>
         <h1><a href="./index.html"><img src="img/logo.png" alt="logo"></a></h1>
         <nav>
@@ -33,12 +33,95 @@
 
             <div id="nav-hamburger">
                 <img  src="img/nav-hamburger.png" alt="Icône menu hamburger">
+                <div class="navigation">
+                    <ul id="nav-long">
+                        <li><a class="actuel" href="./index.html">Accueil</a></li>
+                        <li><a class="btn-commande-nav" href="./menu.html">Menu</a></li>
+                        <li><a href="./reservations.html">Réservations</a></li>
+                        <li><a href="./restaurant.html">Restaurant</a></li>
+                        <li><a href="./macommande.html">Ma commande</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
 
     
     <main>
+        <!--Section Menu-->
+
+        <section class="container container-menu">
+            <h3>Menu</h3>
+            
+            <h4>Antipasti</h4>
+            <div class="flex-menu">
+                <div class="carte-menu box-gauche">
+                    <div class="flex-prix">
+                        <h5>Burrata tomates confites</h5>
+                        <span>16</span>
+                    </div>
+                    <p>Une burrata crémeuse maison avec tomates confites et basilic frais.</p>
+                </div>
+                <div class="carte-menu box-droite">
+                    <div class="flex-prix">
+                        <h5>Carpaccio de betterave ricotta et noix</h5>
+                        <span>14</span>
+                    </div>
+                    <p>Betterave crue marinées avec vinaigrette légère, ricotta salée émiettée et noix concassées.</p>
+                </div>
+                <div class="carte-menu box-gauche">
+                    <div class="flex-prix">
+                        <h5>Carpaccio de boeuf</h5>
+                        <span>9</span>
+                    </div>
+                    <p>Fines tranches de bœuf cru, marinade aux herbes et au parmesan.</p>
+                </div>
+            </div>
+
+            <h4>Pasta</h4>
+            <div class="flex-menu">
+                <div class="carte-menu box-gauche">
+                    <div class="flex-prix">
+                        <h5>Pâtes al Tartufo</h5>
+                        <span>25</span>
+                    </div>
+                    <p>Pâtes fraîches nappées d'une sauce crémeuse à la truffe noire, touche de vin blanc et parmesan.</p>
+                </div>
+                <div class="carte-menu box-droite">
+                    <div class="flex-prix">
+                        <h5>Pâtes al Funghi</h5>
+                        <span>22</span>
+                    </div>
+                    <p>Pâtes fraîches avec sauce crémeuse aux champignons frais, ail, persil et parmesan.</p>
+                </div>
+                <div class="carte-menu box-gauche">
+                    <div class="flex-prix">
+                        <h5>Pâtes al Gorgonzola</h5>
+                        <span>24</span>
+                    </div>
+                    <p>Pâtes fraîches avec sauce crémeuse au gorgonzola, vin blanc et noix.</p>
+                </div>
+                <div class="carte-menu box-droite">
+                    <div class="flex-prix">
+                        <h5>Pâtes ai Frutti di Mare</h5>
+                        <span>28</span>
+                    </div>
+                    <p>Pâtes fraîches avec fruits de mer sautés (crevettes, palourdes, calamars), dans une sauce tomate légère et parfumée.</p>
+                </div>
+            </div>
+
+            <h4>Dolce</h4>
+            <div class="flex-menu">
+                <div class="carte-menu box-gauche">
+                    <div class="flex-prix">
+                        <h5>Panna Cotta</h5>
+                        <span>7</span>
+                    </div>
+                    <p>Crème dessert italienne crémeuse et onctueuse, nappée d'un coulis de fruits rouges frais.</p>
+                </div>
+            </div>
+            
+        </section>
     </main>
 
     <!--Footer-->

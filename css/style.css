@@ -26,6 +26,14 @@ header {
 
 #nav-hamburger {display: none !important;}
 
+.hidden {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
 nav li {
     display: inline-block;
     margin: 1.25em 1.25em;
@@ -337,6 +345,14 @@ hr {
     #nav-long {
         font-size: 1rem;
         padding-left: 0;
+    }
+
+    #nav-mobile {
+        display: none; 
+    }
+
+    #nav-mobile.active {
+        display: block; 
     }
 
     .btn-accueil{
