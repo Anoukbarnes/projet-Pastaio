@@ -41,29 +41,29 @@
         <section class="container">
             <h1 class="title-page">Réservations</h1>
 
-            <form  method="post" action= "confirmation.html" class="flex-form">
+            <form  method="post" action= "confirmation.html" class="flex-form" novalidate>
                 
                 <fieldset class="marg-form form-left">
                     <legend class="marg-box">Informations sur la réservation</legend> 
 
-                    <div class="marg-box">
-                        <label for="date-reservation">Date de la réservation</label><span>*</span>
+                    <div class="marg-box input-control">
+                        <label for="date-reservation" class="form__label">Date de la réservation</label><span>*</span>
                         <div>
-                            <input type="date" id="date-reservation" name="date-reservation" required>
+                            <input class="form__input" type="date" id="date-reservation" name="date-reservation" required>
                         </div>
                     </div>
 
-                    <div class="marg-box">
-                        <label for="nb-personnes">Nombre de personnes</label><span>*</span>
+                    <div class="marg-box input-control">
+                        <label for="nb-personnes" class="form__label">Nombre de personnes</label><span>*</span>
                         <div>
-                            <input type="number" id="nb-personnes" name="nbr-personnes" min="1" required>
+                            <input class="form__input" type="number" id="nb-personnes" name="nbr-personnes" min="1" required>
                         </div>
                     </div>
 
-                    <div class="marg-box">
-                        <label for="time-reservation">Heure de la réservation</label><span>*</span>
+                    <div class="marg-box input-control">
+                        <label for="time-reservation" class="form__label">Heure de la réservation</label><span>*</span>
                         <div>
-                            <select name="time-reservation" id="time-reservation" required>
+                            <select class="form__input" name="time-reservation" id="time-reservation" required>
                                 <option value="">Sélectionnez une heure</option>
                                 <option value="12:00">12:00</option>
                                 <option value="12:30">12:30</option>
@@ -82,16 +82,18 @@
                         </div>
                     </div>
 
-                    <div class="marg-box">
-                        <label>Réservation pour</label><span>*</span>
+                    <div class="marg-box input-control">
+                        <label class="form__label">Réservation pour</label><span>*</span>
 
-                        <div>
-                            <input type="radio" name="rdo-reservation" id="salle" value="salle" checked required>
-                            <label for="salle">Salle à manger</label>
+                        <div class="input-control">
+                            <input class="form__input" type="radio" name="rdo-reservation" id="salle" value="salle" checked required>
+                            <label for="salle" class="form__label">Salle à manger</label>
+                            <div class="errorMessage"></div>
                         </div>
-                        <div>
-                            <input type="radio" name="rdo-reservation" id="terrasse" value="terrasse" required>
-                            <label for="terrasse">Terrasse</label>
+                        <div class="input-control">
+                            <input class="form__input" type="radio" name="rdo-reservation" id="terrasse" value="terrasse" required>
+                            <label for="terrasse" class="form__label">Terrasse</label>
+                            <div class="errorMessage"></div>
                         </div>
                     </div>
 
@@ -107,41 +109,46 @@
                     <legend class="marg-box">Informations personnelles</legend>
                     
                     <div class="marg-box">
-                        <label for="first-name">Votre prénom</label><span>*</span>
+                        <label for="first-name" class="form__label">Votre prénom</label><span>*</span>
                         <div>
-                            <input type="text" id="first-name" name="first-name" placeholder="Prénom" required>
+                            <input class="form__input" type="text" id="first-name" name="first-name" placeholder="Prénom" required>
                         </div>
+                        <div class="errorMessage"></div>
                     </div>
 
                     <div class="marg-box">
-                        <label>Votre nom</label><span>*</span>
+                        <label for="last-name" class="form__label">Votre nom</label><span>*</span>
                         <div>
-                            <input type="text" id="last-name" name="last-name" placeholder="Nom" required>
+                            <input class="form__input" type="text" id="last-name" name="last-name" placeholder="Nom" required>
                         </div>
+                        <div class="errorMessage"></div>
                     </div>
 
-                    <div class="marg-box">
-                        <label for="tel-client">Votre numéro de téléphone</label><span>*</span>
+                    <div class="marg-box input-control">
+                        <label for="tel-client" class="form__label">Votre numéro de téléphone</label><span>*</span>
                         <div>
-                            <input type="tel" id="tel-client" name="tel-client" placeholder="123-456-7890" required>
+                            <input class="form__input" type="tel" id="tel-client" name="tel-client" placeholder="123-456-7890" required>
                         </div>
+                        <div class="errorMessage"></div>
                     </div>
 
-                    <div class="marg-box">
-                        <label for="mail-client">Votre courriel</label>
+                    <div class="marg-box input-control">
+                        <label for="mail-client" class="form__label">Votre courriel</label><span>*</span>
                        <div> 
-                            <input type="email" id="mail-client" name="mail-client" placeholder="xyz@mail.com">
+                            <input class="form__input" type="email" id="mail-client" name="mail-client" placeholder="xyz@mail.com" required>
                         </div>
+                        <div class="errorMessage"></div>
                     </div>
 
                     <div class="marg-box">
                         <label>Je souhaite m'inscrire à l'infolettre de Pastaio</label>
-                        <input type="checkbox" id="ckb-lettre" name="ckb-lettre">
+                        <input class="form__input" type="checkbox" id="ckb-lettre" name="ckb-lettre">
                     </div>
+                    <div class="errorMessage"></div>
                 </fieldset>
 
                     <div class="btn-form">
-                        <input type="submit" id= "btn-form" value="Confirmer la réservation">
+                        <input class="form__input" type="submit" id= "btn-form" value="Confirmer la réservation">
                     </div>
 
             </form>
