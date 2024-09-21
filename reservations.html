@@ -50,15 +50,17 @@
                         <label for="date-reservation" class="form__label">Date de la réservation</label><span>*</span>
                         <div>
                             <input class="form__input" type="date" id="date-reservation" name="date-reservation" required>
+                            <div class="errorMessage"></div>
                         </div>
+                        
                     </div>
 
                     <div class="marg-box input-control">
                         <label for="nb-personnes" class="form__label">Nombre de personnes</label><span>*</span>
                         <div>
                             <input class="form__input" type="number" id="nb-personnes" name="nb-personnes" required>
+                            <div class="errorMessage"></div>
                         </div>
-                        <div class="errorMessage"></div>
                     </div>
 
                     <div class="marg-box input-control">
@@ -80,13 +82,14 @@
                                 <option value="20:30">20:30</option>
                                 <option value="21:00">21:00</option>
                             </select>
+                            <div class="errorMessage"></div>
                         </div>
+                       
                     </div>
 
                     <div class="marg-box input-control">
                         <label class="form__label">Réservation pour</label><span>*</span>
-
-                        <div class="input-control">
+                        <div>
                             <div>
                                 <input class="form__input" type="radio" name="rdo-reservation" id="salle" value="salle" checked required>
                                 <label for="salle" class="form__label">Salle à manger</label>
@@ -94,10 +97,9 @@
                             <div>
                                 <input class="form__input" type="radio" name="rdo-reservation" id="terrasse" value="terrasse" required>
                                 <label for="terrasse" class="form__label">Terrasse</label>
-                                
                             </div>
+                            <div class="errorMessage"></div>
                         </div>
-                        <div class="errorMessage"></div>
                     </div>
 
                     <div class="marg-box">
@@ -111,36 +113,40 @@
                 <fieldset class="marg-form form-right">
                     <legend class="marg-box">Informations personnelles</legend>
                     
-                    <div class="marg-box">
+                    <div class="marg-box input-control">
                         <label for="first-name" class="form__label">Votre prénom</label><span>*</span>
                         <div>
                             <input class="form__input" type="text" id="first-name" name="first-name" placeholder="Prénom" required>
+                            <div class="errorMessage"></div>
                         </div>
-                        <div class="errorMessage"></div>
+                       
                     </div>
 
-                    <div class="marg-box">
+                    <div class="marg-box input-control">
                         <label for="last-name" class="form__label">Votre nom</label><span>*</span>
                         <div>
                             <input class="form__input" type="text" id="last-name" name="last-name" placeholder="Nom" required>
+                            <div class="errorMessage"></div>
                         </div>
-                        <div class="errorMessage"></div>
+                        
                     </div>
 
                     <div class="marg-box input-control">
                         <label for="tel-client" class="form__label">Votre numéro de téléphone</label><span>*</span>
                         <div>
                             <input class="form__input" type="tel" id="tel-client" name="tel-client" placeholder="123-456-7890" required>
+                            <div class="errorMessage"></div>
                         </div>
-                        <div class="errorMessage"></div>
+                        
                     </div>
 
                     <div class="marg-box input-control">
                         <label for="mail-client" class="form__label">Votre courriel</label><span>*</span>
                        <div> 
                             <input class="form__input" type="email" id="mail-client" name="mail-client" placeholder="xyz@mail.com" required>
+                            <div class="errorMessage"></div>
                         </div>
-                        <div class="errorMessage"></div>
+                        
                     </div>
 
                     <div class="marg-box">
