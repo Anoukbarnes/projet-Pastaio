@@ -41,7 +41,7 @@
         <section class="container">
             <h1 class="title-page">Réservations</h1>
 
-            <form  method="post" action= "confirmation.html" class="flex-form" novalidate>
+            <form id="form"  method="post" action= "confirmation.html" class="flex-form" novalidate>
                 
                 <fieldset class="marg-form form-left">
                     <legend class="marg-box">Informations sur la réservation</legend> 
@@ -56,8 +56,9 @@
                     <div class="marg-box input-control">
                         <label for="nb-personnes" class="form__label">Nombre de personnes</label><span>*</span>
                         <div>
-                            <input class="form__input" type="number" id="nb-personnes" name="nbr-personnes" min="1" required>
+                            <input class="form__input" type="number" id="nb-personnes" name="nb-personnes" required>
                         </div>
+                        <div class="errorMessage"></div>
                     </div>
 
                     <div class="marg-box input-control">
@@ -86,15 +87,17 @@
                         <label class="form__label">Réservation pour</label><span>*</span>
 
                         <div class="input-control">
-                            <input class="form__input" type="radio" name="rdo-reservation" id="salle" value="salle" checked required>
-                            <label for="salle" class="form__label">Salle à manger</label>
-                            <div class="errorMessage"></div>
+                            <div>
+                                <input class="form__input" type="radio" name="rdo-reservation" id="salle" value="salle" checked required>
+                                <label for="salle" class="form__label">Salle à manger</label>
+                            </div>
+                            <div>
+                                <input class="form__input" type="radio" name="rdo-reservation" id="terrasse" value="terrasse" required>
+                                <label for="terrasse" class="form__label">Terrasse</label>
+                                
+                            </div>
                         </div>
-                        <div class="input-control">
-                            <input class="form__input" type="radio" name="rdo-reservation" id="terrasse" value="terrasse" required>
-                            <label for="terrasse" class="form__label">Terrasse</label>
-                            <div class="errorMessage"></div>
-                        </div>
+                        <div class="errorMessage"></div>
                     </div>
 
                     <div class="marg-box">
@@ -144,7 +147,6 @@
                         <label>Je souhaite m'inscrire à l'infolettre de Pastaio</label>
                         <input class="form__input" type="checkbox" id="ckb-lettre" name="ckb-lettre">
                     </div>
-                    <div class="errorMessage"></div>
                 </fieldset>
 
                     <div class="btn-form">
@@ -181,6 +183,7 @@
             </div>
         </div>
     </footer>
-    
+    <script src="scripts/validationScript.js"></script>
     </body>
+
     </html>
