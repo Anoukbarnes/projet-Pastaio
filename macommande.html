@@ -25,20 +25,31 @@
 
 <body>
     <header>
-        <h2><a href="./index.html"><img src="img/logo.png" alt="logo"></a></h2>
+        <h1><a href="./index.html"><img src="img/logo.png" alt="logo"></a></h1>
         <nav>
             <div>
                 <ul id="nav-long">
-                    <li><a href="./index.html">Accueil</a></li>
+                    <li><a class="actuel" href="./index.html">Accueil</a></li>
                     <li><a href="./menu.html">Menu</a></li>
                     <li><a href="./reservations.html">Réservations</a></li>
                     <li><a href="./restaurant.html">Restaurant</a></li>
-                    <li><a class="actuel btn-commande-nav" href="./macommande.html">Ma commande</a></li>
+                    <li><a class="btn-commande-nav" href="./macommande.html">Ma commande</a></li>
                 </ul>
             </div>
 
-            <div id="nav-hamburger">
-                <img  src="img/nav-hamburger.png" alt="Icône menu hamburger">
+            <div>
+                <img id="nav-hamburger" src="img/nav-hamburger.png" alt="Icône menu hamburger">
+            </div>
+            <div id="nav-mobile" class="hidden">
+                <img id="nav-close" src="img/nav-close.png" alt="Icône fermeture de menu">
+                <h1><a href="./index.html"><img src="img/logo.png" alt="logo"></a></h1>
+                <ul>
+                    <li><a class="actuel" href="./index.html">Accueil</a></li>
+                    <li><a href="./menu.html">Menu</a></li>
+                    <li><a href="./reservations.html">Réservations</a></li>
+                    <li><a href="./restaurant.html">Restaurant</a></li>
+                    <li><a class="btn-commande-nav" href="./macommande.html">Ma commande</a></li>
+                </ul>
             </div>
         </nav>
     </header>
@@ -59,18 +70,27 @@
                         </tr>
                         <tr>
                             <td class="align-left">Burrata tomates confites</td>
-                            <td>16 $</td>
-                            <td>0</td>
+                            <td class="price">16 $</td>
+                            <td>
+                                <label class="sr-only" for="qte">Quantité</label>
+                                <input type="number" class="qte" name="qte" value="0">
+                            </td>
                         </tr>
                         <tr>
                             <td class="align-left colored-row rounded">Carpaccio bettrave</td>
-                            <td class="colored-row">14 $</td>
-                            <td class="colored-row">1</td>
+                            <td class="colored-row price">14 $</td>
+                            <td class="colored-row">
+                                <label class="sr-only" for="qte">Quantité</label>
+                                <input type="number" class="qte" name="qte" value="0">
+                            </td>
                         </tr>
                         <tr>
                             <td class="align-left">Carpaccio de boeuf</td>
-                            <td>9 $</td>
-                            <td>1</td>
+                            <td class="price">9 $</td>
+                            <td>
+                                <label class="sr-only" for="qte">Quantité</label>
+                                <input type="number" class="qte" name="qte" value="0">
+                            </td>
                         </tr>
                     </table>
                     
@@ -83,23 +103,35 @@
                         </tr>
                         <tr>
                             <td class="align-left">Pâtes al Tartufo</td>
-                            <td>25 $</td>
-                            <td>1</td>
+                            <td class="price">25 $</td>
+                            <td>
+                                <label class="sr-only" for="qte">Quantité</label>
+                                <input type="number" class="qte" name="qte" value="0">
+                            </td>
                         </tr>
                         <tr>
                             <td class="align-left colored-row">Pâtes al Funghi</td>
-                            <td class="colored-row">22 $</td>
-                            <td class="colored-row">0</td>
+                            <td class="colored-row price">22 $</td>
+                            <td class="colored-row">
+                                <label class="sr-only" for="qte">Quantité</label>
+                                <input type="number" class="qte" name="qte" value="0">
+                            </td>
                         </tr>
                         <tr>
                             <td class="align-left">Pâtes al Gorgonzola</td>
-                            <td>24 $</td>
-                            <td>0</td>
+                            <td class="price">24 $</td>
+                            <td>
+                                <label class="sr-only" for="qte">Quantité</label>
+                                <input type="number" class="qte" name="qte" value="0">
+                            </td>
                         </tr>
                         <tr>
                             <td class="align-left colored-row rounded">Pâtes ai Frutti di Mare</td>
-                            <td class="colored-row">28 $</td>
-                            <td class="colored-row">1</td>
+                            <td class="colored-row price">28 $</td>
+                            <td class="colored-row" class="price">
+                                <label class="sr-only" for="qte">Quantité</label>
+                                <input type="number" class="qte" name="qte" value="0">
+                            </td>
                         </tr>
                     </table>
                 
@@ -112,8 +144,11 @@
                         </tr>
                         <tr>
                             <td class="align-left">Panna Cotta</td>
-                            <td>7 $</td>
-                            <td>0</td>
+                            <td class="price">7 $</td>
+                            <td>
+                                <label class="sr-only" for="qte">Quantité</label>
+                                <input type="number" class="qte" name="qte" value="0">
+                            </td>
                         </tr>
                     </table>
                 </div>
@@ -122,16 +157,16 @@
                     <h4>Détails</h4>
                     <div class="flex-prix">
                         <p>Sous-total:</p>
-                        <span>76,00 $</span>
+                        <span id="sous-total"></span>
                     </div>
                     <div class="flex-prix">
                         <p>Taxes:</p>
-                        <span>11,38 $</span>
+                        <span id="taxes"></span>
                     </div>
                     <hr>
                     <div class="flex-prix">
                         <p>Total:</p>
-                        <span>87,38 $</span>
+                        <span id="total"></span>
                     </div>
                     <div class="carte-btn">
                         <a class="btn-commande" href="#">Commander</a>
@@ -167,6 +202,6 @@
                 </div>
             </div>
         </footer>
-    
+        <script src="scripts/script.js"></script>
     </body>
     </html>
