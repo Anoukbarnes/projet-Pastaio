@@ -21,6 +21,10 @@ header {
     margin-bottom: 0;
 }
 
+.sr-only {
+    display: none;
+}
+
 #nav-long {display: inline-block !important;}
 
 #nav-hamburger {display: none !important;}
